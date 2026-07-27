@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<title>IMAGE TO MODEL | FUSION IA</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+
+
+<nav>
+
+<a href="index.html">
+Inicio
+</a>
+
+</nav>
+
+
+
+
+<section class="tool">
+
+
+<h1 class="logo">
+
+🖼️ IMAGE → MODEL
+
+</h1>
+
+
+<p>
+
+Convierte imágenes en modelos 3D editables.
+
+</p>
+
+
+
+<div class="panel">
+
+
+<input type="file">
+
+
+
+<select>
+
+<option>Mob</option>
+<option>Personaje</option>
+<option>Item</option>
+<option>Bloque</option>
+
+</select>
+
+
+
+
+<textarea placeholder="
+Detalles extra del modelo...
+"></textarea>
+
+
+
+
+<button onclick="generate('image')">
+
+ANALIZAR IMAGEN
+
+</button>
+
+
+
+<div id="loading" class="loading">
+
+</div>
+
+
+
+
+<button onclick="downloadFake()">
+
+EXPORTAR .BBMODEL
+
+</button>
+
+
+
+
+<div class="viewer">
+
+
+
+
+<div id="three-container">
+
+
+
+
+Visor 3D preparado para Three.js
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
