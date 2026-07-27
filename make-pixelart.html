@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>MAKE PIXELART</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+<a href="index.html">Inicio</a>
+
+</nav>
+
+
+
+<section class="tool">
+
+
+<h1 class="logo">
+🖌️ MAKE PIXELART
+</h1>
+
+
+<p>
+Crea arte pixel desde texto.
+</p>
+
+
+
+<div class="panel">
+
+
+<textarea placeholder="
+Ejemplo:
+Un guerrero Minecraft con espada legendaria
+"></textarea>
+
+
+
+<select>
+
+<option>8x8</option>
+<option>16x16</option>
+<option>32x32</option>
+<option>64x64</option>
+<option>128x128</option>
+
+</select>
+
+
+
+<select>
+
+<option>Minecraft</option>
+<option>NES</option>
+<option>GameBoy</option>
+<option>Retro</option>
+<option>Cartoon</option>
+<option>Cyber</option>
+
+</select>
+
+
+
+<button onclick="generate('pixel')">
+
+CREAR PIXELART
+
+</button>
+
+
+
+<div id="loading" class="loading">
+
+</div>
+
+
+
+<button onclick="downloadFake()">
+
+DESCARGAR PNG
+
+</button>
+
+
+
+<div class="viewer">
+
+Canvas Pixel Art IA
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
