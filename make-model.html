@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MAKE MODEL | FUSION ENTERTAINMENT IA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="make-model.html">Modelos</a>
+<a href="make-texture.html">Texturas</a>
+<a href="make-pixelart.html">PixelArt</a>
+<a href="image-to-model.html">Imagen 3D</a>
+</nav>
+
+
+<section class="tool">
+
+<h1 class="logo">🧊 MAKE MODEL</h1>
+
+<p>
+Crea modelos 3D editables para Blockbench con IA.
+</p>
+
+
+<div class="panel">
+
+<textarea placeholder="Describe tu modelo...
+Ejemplo: Un dragón de hielo estilo Minecraft"></textarea>
+
+
+<select>
+<option>Mob</option>
+<option>Item</option>
+<option>Bloque</option>
+<option>Armadura</option>
+</select>
+
+
+<select>
+<option>Minecraft Vanilla</option>
+<option>Fantasy</option>
+<option>Low Poly</option>
+<option>Sci-Fi</option>
+</select>
+
+
+<button onclick="generate('model')">
+GENERAR MODELO
+</button>
+
+
+<div id="loading" class="loading">
+</div>
+
+
+<button onclick="downloadFake()">
+DESCARGAR .BBMODEL
+</button>
+
+
+<div class="viewer">
+
+Visor 3D Three.js preparado
+
+<br>
+(Modelo aparecerá aquí)
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
